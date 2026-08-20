@@ -15,10 +15,10 @@ public:
     }
 };
 
-//1. shoppingCart: Only responsible for Cart related business logic.
+// 1. shoppingCart: Only responsible for Cart related business logic.
 class ShoppingCart {
 private:
-    vector<Product*> products; // Store heap-allocated products
+    vector<Product*> products; // store heap-allocated products
 
 public:
     void addProduct(Product* p) { 
@@ -29,7 +29,7 @@ public:
         return products;
     } 
 
-    //Calculates total price in cart.
+    // calculates total price in cart.
     double calculateTotal() {
         double total = 0;
         for (auto p : products) {
